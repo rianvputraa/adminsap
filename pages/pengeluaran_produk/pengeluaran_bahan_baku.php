@@ -7,7 +7,7 @@
             <!-- Widgets -->
             <div class="row clearfix">
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box bg-teal hover-expand-effect">
+                    <div class="info-box-3 bg-gradient hover-zoom-effect">
                         <div class="icon">
                             <i class="material-icons">account_circle</i>
                         </div>
@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box bg-pink hover-expand-effect">
+                    <div class="info-box-3 bg-gradient-red hover-zoom-effect">
                         <div class="icon">
                             <i class="material-icons">new_releases</i>
                         </div>
@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box bg-light-green hover-expand-effect">
+                    <div class="info-box-3 bg-gradient-green hover-zoom-effect">
                         <div class="icon">
                             <i class="material-icons">playlist_add_check</i>
                         </div>
@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="info-box bg-orange hover-expand-effect">
+                    <div class="info-box-3 bg-gradient-blue hover-zoom-effect">
                         <div class="icon">
                             <i class="material-icons">person_add</i>
                         </div>
@@ -55,10 +55,10 @@
             <!-- CPU Usage -->
             <div class="row clearfix">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="card">
+                    <div class="card-table">
                         <div class="header">
                             <div class="row clearfix">
-                               <a href="#"><button type="button" class="btn bg-pink btn-circle waves-effect waves-circle waves-float" style="margin-left: 10px;" hidden>
+                               <a href="#"><button type="button" class="btn bg-gradient btn-circle waves-effect waves-circle waves-float" style="margin-left: 10px;" hidden>
                                     <i class="material-icons">find_in_page</i>
                                 </button></a>
                             </div>

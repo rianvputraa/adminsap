@@ -72,31 +72,6 @@
             });
         });
 </script>
-<script type="text/javascript"> 
-  $(document).ready(function(){
-    var counter = 2;
-    $("#add").click(function () {
-    if(counter>15){
-            alert("Sudah 15 ");
-            return false;
-    }   
- 
-    var newTextBoxDiv = $(document.createElement('div'))
-         .attr("id", 'addMore' + counter);
-    newTextBoxDiv.after().html('<div class="col-sm-3"><select name="id_produk" class="form-control show-tick" "data-live-search="true"></select></div><div class="col-sm-3"><select name="id_bahan_baku" class="form-control show-tick" " data-live-search="true"></select></div><div class="col-sm-3"><div class="input-group"><span class="input-group-addon"><i class="material-icons">dns</i></span><div class="form-line"><input type="text" name="komposisi" class="form-control" placeholder="Komposisi" required></div></div></div><div class="col-sm-2"><div class="input-group"><span class="input-group-addon"><i class="material-icons">bookmark</i></span><div class="form-line"><input type="text" name="status" class="form-control" placeholder="Status" required></div></div></div>');
-    newTextBoxDiv.appendTo("#addMoreAgain"); 
-    counter++;
-     });
- 
-     $("#min").click(function () {
-    if(counter==2){
-            swal("Perhatian!", "Tidak ada yang dihapus", "warning");
-       }   
-    counter--;
-         $("#addMore" + counter).remove();
-      });
-  });
-</script>
 <script>
         jQuery(document).ready(function($){
             $('.lanjut-link').on('click',function(){

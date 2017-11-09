@@ -25,16 +25,16 @@
 									<td>$spl[stock]</td>
 									<td>$spl[lokasi_penyimpanan]</td>";
 									if ($spl['stock'] > 0 ){
-							          echo " <td><button class='btn-status bg-green waves-effect'>TERSEDIA</button></td>";
+							          echo " <td><button class='btn-status bg-gradient-green waves-effect'>TERSEDIA</button></td>";
 									}else{
-									  echo" <td><button class='btn-status bg-red waves-effect'>HABIS</button></td>";
+									  echo" <td><button class='btn-status bg-gradient-red waves-effect'>HABIS</button></td>";
 									};
 
 							echo "
 									<td>
-										<a href='index.php?id_bahan_baku=$spl[id_bahan_baku]'><button type='button' class='btn bg-pink btn-circle-table waves-effect waves-circle waves-float';><i class='material-icons'>create</i></button></a>
-										<a href='index.php?id_bahan_baku=$spl[id_bahan_baku]'><button type='button' class='btn bg-pink btn-circle-table waves-effect waves-circle waves-float';><i class='material-icons'>call_to_action</i></button></a>
-										<a href='../controller/bahan_baku/delete.php?id_bahan_baku=$spl[id_bahan_baku]' class='delete-link'><button type='button' class='btn bg-red btn-circle-table waves-effect waves-circle waves-float'><i class='material-icons'>delete</i></button></a>
+										<a href='index.php?id_bahan_baku=$spl[id_bahan_baku]'><button type='button' class='btn bg-gradient btn-circle-table waves-effect waves-circle waves-float';><i class='material-icons'>create</i></button></a>
+										<a href='index.php?id_bahan_baku=$spl[id_bahan_baku]'><button type='button' class='btn bg-gradient btn-circle-table waves-effect waves-circle waves-float';><i class='material-icons'>call_to_action</i></button></a>
+										<a href='../controller/bahan_baku/delete.php?id_bahan_baku=$spl[id_bahan_baku]' class='delete-link'><button type='button' class='btn bg-gradient-red btn-circle-table waves-effect waves-circle waves-float'><i class='material-icons'>delete</i></button></a>
 									</td>
 								</tr>";
 						}

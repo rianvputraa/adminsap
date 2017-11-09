@@ -66,7 +66,7 @@ while($pelanggan = mysqli_fetch_array($querypelanggan)){
                                             <i class="material-icons">email</i>
                                         </span>
                                         <div class="form-line">
-                                            <input type="text" name="email" class="form-control email" placeholder="Email" value="<?php echo $pelanggan["email"]; ?>" required>
+                                            <input type="text" name="email" class="form-control" placeholder="Email" value="<?php echo $pelanggan["email"]; ?>" required>
                                         </div>
                                     </div>
                                 </div>
@@ -116,7 +116,7 @@ while($pelanggan = mysqli_fetch_array($querypelanggan)){
                                 <div class="col-sm-12">
                                      <div class="input-group">
                                         <span class="input-group-addon">
-                                            <i class="material-icons">card_membership</i>
+                                            <i class="material-icons">card-table_membership</i>
                                         </span>
                                             <select name="status" class="form-control show-tick" " data-live-search="true" placeholder="Tipe Pelanggan">
                                                 <option value="Aktif">Aktif</option>
@@ -135,8 +135,8 @@ while($pelanggan = mysqli_fetch_array($querypelanggan)){
                                     </div>
                                 </div>
 		                        <div class="col-md-12">
-		                            <button id="edit_pelanggan" class="btn btn-lg bg-pink waves-effect" type="submit">EDIT</button>
-		                            <a href="index.php?pelanggan" class="btn btn-lg bg-red waves-effect">BATAL</a>
+		                            <button id="edit_pelanggan" class="btn btn-lg bg-gradient waves-effect" type="submit">EDIT</button>
+		                            <a href="index.php?pelanggan" class="btn btn-lg bg-gradient-red waves-effect">BATAL</a>
 		                        </div>
                               </form>
                             </div>

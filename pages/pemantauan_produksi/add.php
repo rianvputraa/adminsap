@@ -88,8 +88,8 @@
                                     </div>
                                 </div>
 		                        <div class="col-md-12">
-		                            <button id="add_pemantauan" class="btn btn-lg bg-pink waves-effect" type="submit">TAMBAH</button>
-		                            <a href="index.php?pemantauan-produksi" class="btn btn-lg bg-red waves-effect">BATAL</a>
+		                            <button id="add_pemantauan" class="btn btn-lg bg-gradient waves-effect" type="submit">TAMBAH</button>
+		                            <a href="index.php?pemantauan-produksi" class="btn btn-lg bg-gradient-red waves-effect">BATAL</a>
 		                        </div>
                               </form>
                             </div>

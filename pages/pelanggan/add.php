@@ -1,8 +1,6 @@
 <section class="content">
         <div class="container-fluid">
-            <div class="block-header">
-                <h2>PELANGGAN</h2> 
-            </div>
+          
          <!-- Input -->
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -29,6 +27,9 @@
                             <div class="row clearfix">
                               <form action="../controller/pelanggan/add.php" id="sign_in" method="POST">
                                 <div class="col-sm-6">
+                                    <p>
+                                        <b>Nama Pelanggan</b>
+                                    </p>
                                     <div class="input-group">
                                         <span class="input-group-addon">
                                             <i class="material-icons">person</i>
@@ -39,6 +40,9 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
+                                    <p>
+                                        <b>Alamat Pelanggan</b>
+                                    </p>
                                      <div class="input-group">
                                         <span class="input-group-addon">
                                             <i class="material-icons">home</i>
@@ -49,16 +53,22 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
+                                    <p>
+                                        <b>Email</b>
+                                    </p>
                                     <div class="input-group">
                                         <span class="input-group-addon">
                                             <i class="material-icons">email</i>
                                         </span>
                                         <div class="form-line">
-                                            <input type="text" name="email" class="form-control email" placeholder="Email" required>
+                                            <input type="text" name="email" class="form-control" placeholder="Email" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
+                                    <p>
+                                        <b>Telepon</b>
+                                    </p>
                                     <div class="input-group">
                                         <span class="input-group-addon">
                                             <i class="material-icons">phone_iphone</i>
@@ -69,6 +79,9 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
+                                    <p>
+                                        <b>Kredit Limit</b>
+                                    </p>
                                     <div class="input-group">
                                         <span class="input-group-addon">
                                             <i class="material-icons">attach_money</i>
@@ -79,6 +92,9 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
+                                    <p>
+                                        <b>Tipe Pelanggan</b>
+                                    </p>
                                     <div class="input-group">
                                         <span class="input-group-addon">
                                             <i class="material-icons">person</i>
@@ -92,9 +108,12 @@
                                       </div>
                                 </div>
                                 <div class="col-sm-12">
+                                    <p>
+                                        <b>Status Pelanggan</b>
+                                    </p>
                                      <div class="input-group">
                                         <span class="input-group-addon">
-                                            <i class="material-icons">card_membership</i>
+                                            <i class="material-icons">card-table_membership</i>
                                         </span>
                                             <select name="status" class="form-control show-tick" " data-live-search="true" placeholder="Tipe Pelanggan">
                                                 <option value="Aktif">Aktif</option>
@@ -113,8 +132,8 @@
                                     </div>
                                 </div>
 		                        <div class="col-md-12">
-		                            <button id="add_pelanggan" class="btn btn-lg bg-pink waves-effect" type="submit">TAMBAH</button>
-		                            <a href="index.php?pelanggan" class="btn btn-lg bg-red waves-effect">BATAL</a>
+		                            <button id="add_pelanggan" class="btn btn-lg bg-gradient waves-effect" type="submit">TAMBAH</button>
+		                            <a href="index.php?pelanggan" class="btn btn-lg bg-gradient-red waves-effect">BATAL</a>
 		                        </div>
                               </form>
                             </div>

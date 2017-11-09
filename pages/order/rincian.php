@@ -18,13 +18,17 @@ while($data = mysqli_fetch_array($querypelanggan)){
         max-width: 800px;
         margin: auto;
         padding: 30px;
-        border: 1px solid #eee;
         box-shadow: 0 0 10px rgba(0, 0, 0, .15);
         font-size: 16px;
         line-height: 24px;
         font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
         color: #555;
-    }
+        border: 4px solid #5B86E5; 
+        -webkit-border-image:  -webkit-linear-gradient(to left, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+        -moz-border-image:  -moz-linear-gradient(to left, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+        border-image: linear-gradient(to left, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */; 
+        border-image-slice: 1;
+      }
     
     .invoice-box table {
         width: 100%;
@@ -60,8 +64,9 @@ while($data = mysqli_fetch_array($querypelanggan)){
     }
     
     .invoice-box table tr.heading td {
-        background: #eee;
-        border-bottom: 1px solid #ddd;
+        background-color: #36D1DC !important;  /* fallback for old browsers */
+
+        color: #fff;
         font-weight: bold;
     }
     
@@ -70,16 +75,28 @@ while($data = mysqli_fetch_array($querypelanggan)){
     }
     
     .invoice-box table tr.item td{
-        border-bottom: 1px solid #eee;
-    }
+        border-bottom: 1px solid #5B86E5; 
+        -webkit-border-image:  -webkit-linear-gradient(to left, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+        -moz-border-image:  -moz-linear-gradient(to left, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+        border-image: linear-gradient(to left, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */; 
+        border-image-slice: 1;
+      }
     
     .invoice-box table tr.item.last td {
         border-bottom: none;
     }
     
     .invoice-box table tr.total td:nth-child(3) {
-        border-top: 2px solid #eee;
+        border-top: 1px solid #5B86E5; 
+        -webkit-border-image:  -webkit-linear-gradient(to left, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+        -moz-border-image:  -moz-linear-gradient(to left, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+        border-image: linear-gradient(to left, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */; 
+        border-image-slice: 1;
         font-weight: bold;
+    }
+    .bg-gradient {
+        border-bottom: none !important;
+        color: #fff !important; }
     }
     
     @media only screen and (max-width: 600px) {
@@ -152,12 +169,13 @@ while($data = mysqli_fetch_array($querypelanggan)){
                 <td>
                     Nama Produk
                 </td>
-                <td>
+                 <td>
                     Qty
                 </td>
-                <td>
-                    Harga
+                 <td>
+                    Jumlah
                 </td>
+                
             </tr>
             
             <tr class="item">
@@ -181,7 +199,7 @@ while($data = mysqli_fetch_array($querypelanggan)){
                 </td>
             </tr>
         </table>
-         <a href="index.php?pemesanan_produk" class="btn btn-lg bg-pink waves-effect">KEMBALI</a></div>
+         <a href="index.php?pemesanan_produk" class="btn btn-lg bg-gradient waves-effect">KEMBALI</a></div>
          </div>            
 </section>
     <?php

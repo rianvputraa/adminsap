@@ -27,17 +27,17 @@
 									<td>$spl[satuan]</td>
 									<td>$spl[harga]</td>";
 									if ($spl['id_jenis'] == 1 && $spl['status_komposisi'] == ''){
-							          echo " <td><a href='index.php?tambah-komposisi'><button class='btn-status bg-red waves-effect'>BELUM</button></a></td>";
+							          echo " <td><a href='index.php?tambah-komposisi'><button class='btn-status bg-gradient-red waves-effect'>BELUM</button></a></td>";
 									}else{
-									  echo " <td><button class='btn-status bg-green waves-effect'>SUDAH</button></td>";
+									  echo " <td><button class='btn-status bg-gradient-green waves-effect'>SUDAH</button></td>";
 									};
 
 							echo "	<td>$spl[lokasi_penyimpanan]</td>
 									<td>$spl[stok]</td>
 									<td>
-										<a href='index.php?id_produk=$spl[id_produk]'><button type='button' class='btn bg-pink btn-circle-table waves-effect waves-circle waves-float';><i class='material-icons'>create</i></button></a>
-										<a href='index.php?id_produk=$spl[id_produk]'><button type='button' class='btn bg-pink btn-circle-table waves-effect waves-circle waves-float';><i class='material-icons'>call_to_action</i></button></a>
-										<a href='../controller/produk/delete.php?id_produk=$spl[id_produk]' class='delete-link'><button type='button' class='btn bg-red btn-circle-table waves-effect waves-circle waves-float'><i class='material-icons'>delete</i></button></a>
+										<a href='index.php?id_produk=$spl[id_produk]'><button type='button' class='btn bg-gradient btn-circle-table waves-effect waves-circle waves-float';><i class='material-icons'>create</i></button></a>
+										<a href='index.php?id_produk=$spl[id_produk]'><button type='button' class='btn bg-gradient btn-circle-table waves-effect waves-circle waves-float';><i class='material-icons'>call_to_action</i></button></a>
+										<a href='../controller/produk/delete.php?id_produk=$spl[id_produk]' class='delete-link'><button type='button' class='btn bg-gradient-red btn-circle-table waves-effect waves-circle waves-float'><i class='material-icons'>delete</i></button></a>
 									</td>
 								</tr>";
 						}

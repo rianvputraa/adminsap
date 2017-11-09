@@ -181,7 +181,7 @@ while($data = mysqli_fetch_array($querypelanggan)){
                 </td>
             </tr>
         </table>
-         <a href="index.php?pemesanan_produk" class="btn btn-lg bg-pink waves-effect">KONFIRMASI</a></div>
+         <a href="index.php?pemesanan_produk" class="btn btn-lg bg-gradient waves-effect">KONFIRMASI</a></div>
          </div>            
 </section>
     <?php

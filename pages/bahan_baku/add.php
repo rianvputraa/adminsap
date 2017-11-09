@@ -2,12 +2,16 @@
 
         $cari_kd=mysqli_query($konek, "select max(kode_bahan_baku) as kode from bahan_baku"); //mencari kode yang paling besar atau kode yang baru masuk
         $tm_cari=mysqli_fetch_array($cari_kd);
-        $kode=substr($tm_cari['kode'],6,7); //mengambil string mulai dari karakter pertama 'A' dan mengambil 4 karakter setelahnya.
+        $kode=substr($tm_cari['kode'],4,7); //mengambil string mulai dari karakter pertama 'A' dan mengambil 4 karakter setelahnya.
         $tambah=$kode+1; //kode yang sudah di pecah di tambah 1
-            if($tambah<10){ //jika kode lebih kecil dari 10 (9,8,7,6 dst) maka
+            if($tambah<=10){ //jika kode lebih kecil dari 10 (9,8,7,6 dst) maka
             $id="BB-000".$tambah;
-            }else{
+            }elseif ($tambah<=100){
             $id="BB-00".$tambah;
+            }elseif ($tambah<=1000){
+            $id="BB-0".$tambah;
+            }elseif ($tambah<=10000){
+            $id="BB-".$tambah;
             }
 ?>
 
@@ -44,7 +48,7 @@
                                 <div class="col-sm-3">
                                     <div class="input-group">
                                         <span class="input-group-addon">
-                                            <i class="material-icons">card_membership</i>
+                                            <i class="material-icons">card-table_membership</i>
                                         </span>
                                         <div class="form-line">
                                             <input type="text" name="kode_bahan_baku" class="form-control" placeholder="Kode Bahan - baku" value="<?php echo $id;?>" required>
@@ -94,8 +98,8 @@
                                     </div>
                                 </div>
 		                        <div class="col-md-12">
-		                            <button id="add_produk" class="btn btn-lg bg-pink waves-effect" type="submit">TAMBAH</button>
-		                            <a href="index.php?bahan_baku" class="btn btn-lg bg-red waves-effect">BATAL</a>
+		                            <button id="add_produk" class="btn btn-lg bg-gradient waves-effect" type="submit">TAMBAH</button>
+		                            <a href="index.php?bahan_baku" class="btn btn-lg bg-gradient-red waves-effect">BATAL</a>
 		                        </div>
                               </form>
                             </div>

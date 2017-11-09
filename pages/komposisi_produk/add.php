@@ -93,17 +93,17 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button type="button" class="btn bg-pink btn-circle waves-effect waves-circle waves-float" style="margin-left: 10px;" id="add">
+                                <button type="button" class="btn bg-gradient btn-circle waves-effect waves-circle waves-float" style="margin-left: 10px;" id="add">
                                 <i class="material-icons">add</i>
                                 </button>
-                                <button type="button" class="btn bg-red btn-circle waves-effect waves-circle waves-float" style="margin-left: 10px;" id="min">
+                                <button type="button" class="btn bg-gradient-red btn-circle waves-effect waves-circle waves-float" style="margin-left: 10px;" id="min">
                                 <i class="material-icons">clear</i>
                                 </button>
                                </div>
                                </div>
                                <div class="col-md-12">
-                                    <button id="add_komposisi" class="btn btn-lg bg-pink waves-effect" type="submit">TAMBAH</button>
-                                    <a href="index.php?komposisi-produk" class="btn btn-lg bg-red waves-effect" id="back">BATAL</a>
+                                    <button id="add_komposisi" class="btn btn-lg bg-gradient waves-effect" type="submit">TAMBAH</button>
+                                    <a href="index.php?komposisi-produk" class="btn btn-lg bg-gradient-red waves-effect" id="back">BATAL</a>
                               </div>
                               </form>
                             </div>

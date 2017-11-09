@@ -17,7 +17,7 @@
     ?>
 </head>
 
-<body class="theme-pink">
+<body class="theme-light-blue">
     <!-- Overlay For Sidebars -->
     <div class="overlay"></div>
     <!-- #END# Overlay For Sidebars -->

@@ -30,14 +30,14 @@
 									<td>$spl[kredit_limit]</td>";
 
 									if ($spl['status'] == 'Aktif'){
-							          echo " <td><button class='btn-status bg-green waves-effect'>$spl[status]</button></td>";
+							          echo " <td><button class='btn-status bg-gradient-green waves-effect'>$spl[status]</button></td>";
 									}else{
-									  echo" <td><button class='btn-status bg-red waves-effect'>$spl[status]</button></td>";
+									  echo" <td><button class='btn-status bg-gradient-red waves-effect'>$spl[status]</button></td>";
 									};
 
 							echo "<td>
-										<a href='index.php?id_pelanggan=$spl[id_pelanggan]'><button type='button' class='btn bg-pink btn-circle-table waves-effect waves-circle waves-float';><i class='material-icons'>create</i></button></a>
-										<a href='../controller/pelanggan/delete.php?id_pelanggan=$spl[id_pelanggan]' class='delete-link'><button type='button' class='btn bg-red btn-circle-table waves-effect waves-circle waves-float'><i class='material-icons'>delete</i></button></a>
+										<a href='index.php?id_pelanggan=$spl[id_pelanggan]'><button type='button' class='btn bg-gradient btn-circle-table waves-effect waves-circle waves-float';><i class='material-icons'>create</i></button></a>
+										<a href='../controller/pelanggan/delete.php?id_pelanggan=$spl[id_pelanggan]' class='delete-link'><button type='button' class='btn bg-gradient-red btn-circle-table waves-effect waves-circle waves-float'><i class='material-icons'>delete</i></button></a>
 									</td>
 								</tr>";
 						}

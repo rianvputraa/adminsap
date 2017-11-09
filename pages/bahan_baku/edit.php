@@ -43,7 +43,7 @@ while($bb = mysqli_fetch_array($querybb)){
                                 <div class="col-sm-3">
                                     <div class="input-group">
                                         <span class="input-group-addon">
-                                            <i class="material-icons">card_membership</i>
+                                            <i class="material-icons">card-table_membership</i>
                                         </span>
                                         <div class="form-line">
                                             <input type="text" name="kode_bahan_baku" class="form-control" placeholder="Kode Bahan - baku" value="<?php echo $bb['kode_bahan_baku'];?>" required>
@@ -93,8 +93,8 @@ while($bb = mysqli_fetch_array($querybb)){
                                     </div>
                                 </div>
 		                        <div class="col-md-12">
-		                            <button id="edit_produk" class="btn btn-lg bg-pink waves-effect" type="submit">EDIT</button>
-		                            <a href="index.php?bahan_baku" class="btn btn-lg bg-red waves-effect">BATAL</a>
+		                            <button id="edit_produk" class="btn btn-lg bg-gradient waves-effect" type="submit">EDIT</button>
+		                            <a href="index.php?bahan_baku" class="btn btn-lg bg-gradient-red waves-effect">BATAL</a>
 		                        </div>
                               </form>
                             </div>

@@ -15,7 +15,7 @@
         <div class="logo">
            <a href="javascript:void(0);"><img src="../../assets/images/logo.png"></a>
         </div>
-        <div class="card">
+        <div class="card-table">
             <div class="body">
                 <form id="forgot_password" method="POST">
                     <div class="msg">
@@ -30,7 +30,7 @@
                         </div>
                     </div>
 
-                    <button class="btn btn-block btn-lg bg-pink waves-effect" type="submit">RESET PASSWORD SAYA</button>
+                    <button class="btn btn-block btn-lg bg-gradient waves-effect" type="submit">RESET PASSWORD SAYA</button>
 
                     <div class="row m-t-20 m-b--5 align-center">
                         <a href="../../index.php">KEMBALI</a>

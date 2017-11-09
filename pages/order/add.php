@@ -94,7 +94,7 @@
                                 <div class="col-sm-12">
                                      <div class="input-group">
                                         <span class="input-group-addon">
-                                            <i class="material-icons">card_membership</i>
+                                            <i class="material-icons">card-table_membership</i>
                                         </span>
                                             <select name="status" class="form-control show-tick" " data-live-search="true" placeholder="Tipe Buat Order">
                                                 <option value="Aktif">Aktif</option>
@@ -113,8 +113,8 @@
                                     </div>
                                 </div>
 		                        <div class="col-md-12">
-		                            <button id="add_order" class="btn btn-lg bg-pink waves-effect" type="submit">TAMBAH</button>
-		                            <a href="index.php?pemesanan_produk" class="btn btn-lg bg-red waves-effect">BATAL</a>
+		                            <button id="add_order" class="btn btn-lg bg-gradient waves-effect" type="submit">TAMBAH</button>
+		                            <a href="index.php?pemesanan_produk" class="btn btn-lg bg-gradient-red waves-effect">BATAL</a>
 		                        </div>
                               </form>
                             </div>

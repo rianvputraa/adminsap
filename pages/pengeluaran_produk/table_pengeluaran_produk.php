@@ -30,7 +30,7 @@
 									<td>$spl[username]</td>
 									<td>$spl[Hari] $spl[Bulan] $spl[Tahun]</td>";
 									if ($spl['status_aliran'] == 'TERJUAL' ){
-							         echo" <td><button type='button' class='btn-status bg-green waves-effect'><i class='material-icons'>done</i> TERJUAL</button></td>";
+							         echo" <td><button type='button' class='btn-status bg-gradient-green waves-effect'><i class='material-icons'>done</i> TERJUAL</button></td>";
 									};
 
 							echo "

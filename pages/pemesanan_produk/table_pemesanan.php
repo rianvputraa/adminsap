@@ -24,9 +24,9 @@
 									<td>$spl[Hari] $spl[Bulan] $spl[Tahun]</td>
 									<td>$spl[HariPesan] $spl[BulanPesan] $spl[TahunPesan]</td>";
 									if ($spl['status_order'] == '' ){
-							          echo " <td><button class='btn-status bg-red waves-effect'>BLM BAYAR</button></td>";
+							          echo " <td><button class='btn-status bg-gradient-red waves-effect'>BLM BAYAR</button></td>";
 									}else{
-									  echo" <td><button class='btn-status bg-green waves-effect'>SDH BAYAR</button></td>";
+									  echo" <td><button class='btn-status bg-gradient-green waves-effect'>SDH BAYAR</button></td>";
 									};
 
 							echo "
@@ -34,10 +34,10 @@
 
 									if ($spl['status_order'] == '' ){
 							          echo " <td><a href='index.php?id_order_penjualan=$spl[id_order_penjualan]'><button class='btn-status bg-grey waves-effect'>RINCIAN</button></a>
-							              <a href='../controller/order/confirm_bayar.php?id_order_penjualan=$spl[id_order_penjualan]' class='lanjut-link'><button class='btn-status bg-blue waves-effect'>KONFIRM</button></a></td>";
+							              <a href='../controller/order/confirm_bayar.php?id_order_penjualan=$spl[id_order_penjualan]' class='lanjut-link'><button class='btn-status bg-gradient-blue waves-effect'>KONFIRM</button></a></td>";
 									}else{
 									  echo" <td><a href='index.php?id_order_penjualan=$spl[id_order_penjualan]'><button class='btn-status bg-grey waves-effect'>RINCIAN</button></a>
-										    <a href='#'><button class='btn-status bg-green waves-effect'>LUNAS</button></a></td>";
+										    <a href='#'><button class='btn-status bg-gradient-green waves-effect'>LUNAS</button></a></td>";
 									};
 
 							echo "

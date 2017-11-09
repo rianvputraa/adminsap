@@ -18,14 +18,14 @@
 								<tr>
 								    <td>$spl[nama_produk]</td>";
 								    if ($spl['status'] == 'SUDAH DIBUAT' ){
-							          echo " <td><button class='btn-status bg-green waves-effect'>TERSEDIA</button></td>";
+							          echo " <td><button class='btn-status bg-gradient-green waves-effect'>TERSEDIA</button></td>";
 									}else{
-									  echo" <td><button class='btn-status bg-red waves-effect'>KOSONG</button></td>";
+									  echo" <td><button class='btn-status bg-gradient-red waves-effect'>KOSONG</button></td>";
 									};
 
 							echo "
 									<td>
-										<a href='#'><button type='button' class='btn bg-pink btn-circle-table waves-effect waves-circle waves-float';><i class='material-icons'>reorder</i></button></a>
+										<a href='#'><button type='button' class='btn bg-gradient btn-circle-table waves-effect waves-circle waves-float';><i class='material-icons'>reorder</i></button></a>
 									</td>
 								</tr>";
 						}

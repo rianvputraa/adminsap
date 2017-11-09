@@ -22,14 +22,14 @@
 									<td>$spl[alamat_supplier]</td>";
 
 									if ($spl['status'] == 'Aktif'){
-							          echo " <td><button class='btn-status bg-green waves-effect'>$spl[status]</button></td>";
+							          echo " <td><button class='btn-status bg-gradient-green waves-effect'>$spl[status]</button></td>";
 									}else{
-									  echo" <td><button class='btn-status bg-red waves-effect'>$spl[status]</button></td>";
+									  echo" <td><button class='btn-status bg-gradient-red waves-effect'>$spl[status]</button></td>";
 									};
 								
 							echo "<td>
-										<a href='index.php?id_supplier=$spl[id_supplier]'><button type='button' class='btn bg-pink btn-circle-table waves-effect waves-circle waves-float';><i class='material-icons'>create</i></button></a>
-										<a href='../controller/supplier/delete.php?id_supplier=$spl[id_supplier]' class='delete-link'><button type='button' class='btn bg-red btn-circle-table waves-effect waves-circle waves-float'><i class='material-icons'>delete</i></button></a>
+										<a href='index.php?id_supplier=$spl[id_supplier]'><button type='button' class='btn bg-gradient btn-circle-table waves-effect waves-circle waves-float';><i class='material-icons'>create</i></button></a>
+										<a href='../controller/supplier/delete.php?id_supplier=$spl[id_supplier]' class='delete-link'><button type='button' class='btn bg-gradient-red btn-circle-table waves-effect waves-circle waves-float'><i class='material-icons'>delete</i></button></a>
 									</td>
 								</tr>";
 						}

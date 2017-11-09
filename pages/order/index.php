@@ -4,9 +4,13 @@
         $tm_cari=mysqli_fetch_array($cari_kd);
         $kode= substr($tm_cari['kode'],12,12); //mengambil string mulai dari karakter pertama 'A' dan mengambil 4 karakter setelahnya.
         $tambah=$kode+1; //kode yang sudah di pecah di tambah 1
-            if($tambah<10){ //jika kode lebih kecil dari 10 (9,8,7,6 dst) maka
+            if($tambah<=9){ //jika kode lebih kecil dari 10 (9,8,7,6 dst) maka
             $id="INV".$tanggal."-".$tambah;
-            }else{
+            }else if ($tambah<=99){
+            $id="INV".$tanggal."-".$tambah;
+            }else if ($tambah<=999){
+            $id="INV".$tanggal."-".$tambah;
+            }else if ($tambah<=9999){
             $id="INV".$tanggal."-".$tambah;
             }
 ?>
@@ -42,8 +46,8 @@
                             <div class="row clearfix">
                               <form action="../controller/order/add.php" id="sign_in" method="POST">
                                 <div id="Tambah">
-                                     <div id="TambahLagi">
                                 <div class="col-sm-2">
+                                    <p><b>Nomor Invoice</b></p>
                                      <div class="input-group">
                                         <span class="input-group-addon">
                                             <i class="material-icons">receipt</i>
@@ -54,6 +58,7 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-3">
+                                     <p><b>Pelanggan</b></p>
                                     <div class="input-group">
                                         <span class="input-group-addon">
                                             <i class="material-icons">person</i>
@@ -74,6 +79,7 @@
                                       </div>
                                 </div>
                                 <div class="col-sm-3">
+                                     <p><b>Nama Produk</b></p>
                                     <div class="input-group">
                                         <span class="input-group-addon">
                                             <i class="material-icons">call_to_action</i>
@@ -111,6 +117,7 @@
                                       </div>
                                 </div>
                                  <div class="col-sm-2">
+                                     <p><b>Harga Satuan</b></p>
                                      <div class="input-group">
                                         <span class="input-group-addon">
                                             <i class="material-icons">attach_money</i>
@@ -136,6 +143,7 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-2">
+                                     <p><b>Banyaknya</b></p>
                                      <div class="input-group">
                                         <span class="input-group-addon">
                                             <i class="material-icons">layers</i>
@@ -145,17 +153,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <button type="button" class="btn bg-pink btn-circle waves-effect waves-circle waves-float" style="margin-left: 10px;" id="add_order">
+                                <!-- <button type="button" class="btn bg-gradient btn-circle waves-effect waves-circle waves-float" style="margin-left: 10px;" id="add_order">
                                 <i class="material-icons">add</i>
                                 </button>
-                                <button type="button" class="btn bg-red btn-circle waves-effect waves-circle waves-float" style="margin-left: 10px;" id="min_order">
+                                <button type="button" class="btn bg-gradient-red btn-circle waves-effect waves-circle waves-float" style="margin-left: 10px;" id="min_order">
                                 <i class="material-icons">clear</i>
                                 </button> -->
                                  </div>
-                                 </div>
                                 <div class="col-md-12">
-                                    <button id="add_order" class="btn btn-lg bg-pink waves-effect" type="submit">LANJUTKAN</button>
-                                    <a href="index.php?pemesanan_produk" class="btn btn-lg bg-red waves-effect">BATAL</a>
+                                    <button id="add_order" class="btn btn-lg bg-gradient waves-effect" type="submit">LANJUTKAN</button>
+                                    <a href="index.php?pemesanan_produk" class="btn btn-lg bg-gradient-red waves-effect">BATAL</a>
                                 </div>
                               </form>
                             </div>

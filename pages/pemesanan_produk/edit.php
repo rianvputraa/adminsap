@@ -111,8 +111,8 @@ while($pemesanan = mysqli_fetch_array($querypemesanan)){
                                     </div>
                                 </div>
 		                        <div class="col-md-12">
-		                            <button id="edit_pemesanan" class="btn btn-lg bg-pink waves-effect" type="submit">EDIT</button>
-		                            <a href="index.php?pemesanan" class="btn btn-lg bg-red waves-effect">BATAL</a>
+		                            <button id="edit_pemesanan" class="btn btn-lg bg-gradient waves-effect" type="submit">EDIT</button>
+		                            <a href="index.php?pemesanan" class="btn btn-lg bg-gradient-red waves-effect">BATAL</a>
 		                        </div>
                               </form>
                             </div>
